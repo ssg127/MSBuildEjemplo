@@ -5,11 +5,13 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{7C582DE8-D302-438C-842F-C13779BC3533}</ProjectGuid>
+	<ProductVersion>1.0</ProductVersion>
+	<Year>2018</Year>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>EjemploMSBuild</RootNamespace>
     <AssemblyName>EjemploMSBuild</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -44,11 +46,13 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
-       Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
+	<Message Text="Versión del programa: $(ProductVersion), año $(Year)" />
+    <Message Text="El archivo de salida se encuentra en $(OutputPath)" />
+    <Message Text="Configuración: $(Configuration)" />
+    <Message Text="Compile item type contains @(Compile, '%0A%0D')" />
   </Target>
   <Target Name="AfterBuild">
+	<Message Text="Después de build" />
   </Target>
-  -->
 </Project>
