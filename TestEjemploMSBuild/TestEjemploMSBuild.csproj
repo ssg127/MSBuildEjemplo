@@ -86,8 +86,8 @@
   <Target Name="AfterBuild">
 	<Message Text="Ejecutando tests con MSTest" />
 	<Delete Files="testResults\testResults.coverage" />
-	<Exec Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' " Command="MSTest.exe /testcontainer:bin\Debug\TestEjemploMSBuild.dll  /resultsfile:testResults\testResults.coverage" />
-	<Exec Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' " Command="MSTest.exe /testcontainer:bin\Release\TestEjemploMSBuild.dll  /resultsfile:testResults\testResults.xml" />
+	<Exec Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' " Command="MSTest.exe /testcontainer:bin\Debug\TestEjemploMSBuild.dll" />
+	<Exec Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' " Command="MSTest.exe /testcontainer:bin\Release\TestEjemploMSBuild.dll" />
   </Target>
   
 </Project>
