@@ -8,7 +8,7 @@ namespace TestEjemploMSBuild
     public class TestEjemplo
     {
         [TestMethod]
-        public void TestMethod1()
+        public void TestIgual()
         {
             int x = 1;
             int y = 1;
@@ -19,7 +19,7 @@ namespace TestEjemploMSBuild
 
         }
         [TestMethod]
-        public void TestMethod2()
+        public void TestNoIgual()
         {
             int x = 1;
             int y = 2;
