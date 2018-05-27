@@ -26,7 +26,7 @@ namespace TestEjemploMSBuild
 
             Ejemplo aux = new Ejemplo(x, y);
             bool comprobar = aux.metodo(x, y);
-            Assert.IsFalse(comprobar);
+            Assert.IsTrue(comprobar);
 
         }
     }
