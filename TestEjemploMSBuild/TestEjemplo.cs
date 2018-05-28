@@ -16,7 +16,6 @@ namespace TestEjemploMSBuild
             Ejemplo aux = new Ejemplo(x, y);
             bool comprobar = aux.metodo(x, y);
             Assert.IsTrue(comprobar);
-
         }
 		
         [TestMethod]
@@ -28,19 +27,6 @@ namespace TestEjemploMSBuild
             Ejemplo aux = new Ejemplo(x, y);
             bool comprobar = aux.metodo(x, y);
             Assert.IsFalse(comprobar);
-
-        }
-
-        [TestMethod]
-        public void TestNoIgual2()
-        {
-            int x = 3;
-            int y = 2;
-
-            Ejemplo aux = new Ejemplo(x, y);
-            bool comprobar = aux.metodo(x, y);
-            Assert.IsFalse(comprobar);
-
         }
     }
 }
